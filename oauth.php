@@ -1,8 +1,9 @@
 <?php
-//クライアントID・クライアントシークレット・リダイレクトURI・スコープ
+//instagram developer 側で発行した内容を入れる
 $client_id = "4b2b081a23d34357a1e8521bef3d6f8f";
 $client_secret = "43ee63c062084bfb9a1d7a159c986336";
 $redirect_uri = "http://oratta.oratta/test";
+
 $scope = "basic+comments+relationships+likes";
 
 //セッションスタート
@@ -88,4 +89,3 @@ foreach ($dataArray as $data){
 foreach ($imageArray as $imageUrl){
 	echo "<img src='{$imageUrl}'>";
 }
-
